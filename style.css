@@ -37,17 +37,14 @@ li a:hover{
 
 .prebook-section{
     display: flex;
-    grid-template-rows: auto;
-    margin: 2rem;
-    margin-bottom: 5rem;
+    grid-template-rows: repeat(2, 1fr);
+    
     
 }
 .main-camera{
-    background-image: url(images/Circle\ design.svg);
-    height: 100%;
-    width: 50%;
-    padding-left: 50px;
-    background-repeat: no-repeat;
+    background-image: url(images/Circle\ design-svg.svg);
+    background-repeat: no-repeat ;
+    
 }
 
 .main-camera > img{
@@ -201,6 +198,18 @@ li a:hover{
         
     }
 
+    .main-camera img{
+        height: 300px;
+        width: 300px;
+    } 
+    .main-camera{
+        background-image: url(images/Circle\ design-svg.svg);
+        background-size: 350px;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        overflow: hidden;
+    } 
     .prebook-section{
         display:flex;
         flex-direction: column-reverse;
