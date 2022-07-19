@@ -1,0 +1,262 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.nav-section{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    display: inline-block;
+    padding: 10px 20px;
+    
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover{
+    margin: 10px;
+    padding: 5px 15px;
+    background-color: #E02C6D;
+    color: white;
+    transition: 1s;
+    border-radius: 15px;
+}
+
+/* nav section end  */
+
+.prebook-section{
+    display: flex;
+    grid-template-rows: auto;
+    margin: 2rem;
+    margin-bottom: 5rem;
+    
+}
+.main-camera{
+    background-image: url(images/Circle\ design.svg);
+    height: 100%;
+    width: 50%;
+    padding-left: 50px;
+    background-repeat: no-repeat;
+}
+
+.main-camera > img{
+    height: 100%;
+    
+}
+.prebook-text{
+    width: 50%;
+    padding-left: 4rem;
+    padding-top: 5rem;
+    
+}
+.prebook-text > h1{
+    font-size:40px;
+    margin-bottom: 1rem;
+}
+
+.prebook-text > p{
+    color: rgb(58, 58, 89);
+    margin-bottom: 1rem;
+}
+
+.btn{
+    height: 40px;
+    width: 180px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #E02C6D;
+    font-size: 1.3rem;
+}
+/* main and camara end  */
+
+.patner-logo{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+.patner-logo img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    
+}
+/* patner-logo end  */
+
+
+
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    margin: 4rem;
+
+}
+.item{
+    padding:10px ;
+    justify-self: center; 
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+.fa-star{
+    color: rgb(239, 198, 14);
+}
+
+/* Popular-Collection end */
+
+.join-section{
+    display: grid;
+    grid-template-columns:2fr 3fr;
+}
+
+.join-section img{
+    margin-left: 7vw;
+
+}
+
+.join-section h1{
+    font-size: 45px;
+
+}
+
+.join-section-text{
+    padding-top: 30px;
+}
+
+.fooder{
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: 30px;
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.fooder a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 0px 10px;
+
+}
+
+/* css end    */
+
+@media only screen and (max-width:688px) {
+
+    .nav-section{
+        display: grid;
+        justify-content: center;
+        background-color: antiquewhite;
+        gap: 20px;
+    }
+    .com-name{
+        align-items: center;
+        color: #E02C6D;
+        font-size: 30px;
+        padding: 4px 30px;
+        border-radius: 50px;
+        background-color: #f09aba;
+    }
+    ul{
+        display: grid;
+        justify-content: auto;
+    }
+    li{
+        
+        justify-self: center;
+        border-radius: 50px;
+        margin-bottom: 10px;
+        padding: 10px 40px;
+        background-color: #E02C6D;
+    }
+    li a:hover{
+        color: white;
+        transition: 2s;
+        border-radius: 15px;
+        font-size: 2rem;
+        border-radius: 50px;
+        width: auto;
+        margin-bottom: 10px;
+        
+    }
+
+    .prebook-section{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .prebook-section img{
+        width: 300px;
+        height:300px;
+    }
+   .prebook-text{
+    
+    width: 90%;
+    justify-content: center;
+   }
+   .prebook-section p {
+    text-align: center;
+   }
+   .prebook-text > h1{
+    font-size:39px;
+    margin-bottom: 1rem;
+}
+   .prebook-text > .btn{
+    
+    margin-left: 80px;
+    
+   }
+
+   .patner-logo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    
+   }
+
+   .items{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 30px;
+    margin: 4rem;
+
+}
+
+.join-section{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+.join-section-text p{
+    text-align: center;
+}
+
+.join-section-text > h1{
+    text-align: center;
+}
+.join-section-text > .btn{
+    margin-left: 160px ;
+    align-items: center;
+}
+
+}
